@@ -23,7 +23,7 @@ class CartItem extends Component {
     console.log(price)
     return (
       <li>
-        <div testid="cartItem" className={cartClass.CartListItem}>
+        <div data-testid="cartItem" className={cartClass.CartListItem}>
           <img
             src={eachCartItem.imageUrl}
             alt="cart-item"
@@ -33,18 +33,18 @@ class CartItem extends Component {
             <h1 className={cartClass.CartItemName}>{eachCartItem.name}</h1>
             <div className="each-item-counter-container">
               <button
-                testid="decrement-quantity"
+                data-testid="decrement-quantity"
                 type="button"
                 className="minus-icon-container"
                 onClick={this.decrement}
               >
                 <HiOutlineMinusSm className="minus-icon" />
               </button>
-              <p testid="item-quantity" className="count-value">
+              <p data-testid="item-quantity" className="count-value">
                 {eachCartItem.quantity}
               </p>
               <button
-                testid="increment-quantity"
+                data-testid="increment-quantity"
                 type="button"
                 className="plus-icon-container"
                 onClick={this.increment}

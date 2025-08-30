@@ -202,7 +202,7 @@ class HomeRoute extends Component {
   // carousel loader
 
   carouselDisplayLoading = () => (
-    <div className={classes.Loader} testid ="restaurants-offers-loader">
+    <div className={classes.Loader} data-testid="restaurants-offers-loader">
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
     </div>
   )
@@ -210,10 +210,9 @@ class HomeRoute extends Component {
   // restaurants loader
 
   restaurantsDisplayLoading = () => (
-    <div className={classes.Loader} testid ="restaurants-list-loader">
+    <div className={classes.Loader} data-testid="restaurants-list-loader">
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
     </div>
-    
   )
 
   // onchange event function for change the sort value in the state
